@@ -16,12 +16,15 @@ class MainActivity : AppCompatActivity() {
         val displayTextView = findViewById<TextView>(R.id.textDisplay)
 
         /* TODO Step 1: Populate this array */
+
+        //val numberArray = Array(50) { (it + 1) * 2 }
         val numberArray = arrayListOf<Int>()
-        for (i in 1 .. 100){
+        for(i in 1 .. 100){
             if (i %2 == 0){
                 numberArray.add(i)
             }
         }
+
 
 
         /* TODO Step 2: Create adapter to display items from array in Spinner */
